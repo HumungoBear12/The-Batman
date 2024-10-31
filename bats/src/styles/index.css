@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+main,
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+section,
+details,
+summary {
+  display: block;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img,
+object,
+embed {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  overflow-y: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted #222;
+  cursor: help;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+td {
+  font-weight: normal;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+
+input [type="radio"] {
+  vertical-align: text-bottom;
+}
+
+input [type="checkbox"] {
+  vertical-align: bottom;
+}
+
+.ie7 input [type="checkbox"] {
+  vertical-align: baseline;
+}
+
+.ie6 input[type="checkbox"] {
+  vertical-align: text-bottom;
+}
+
+select,
+input,
+textarea {
+  font-size: 99%;
+}
+
+small {
+  font-size: 99%;
+}
+
+strong {
+  font-weight: bold;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  top: -0.05em;
+}
+
+sub {
+  bottom: -0.025em;
+}
+
+.clickable,
+label,
+input[type="button"],
+input[type="submit"],
+input[type="file"],
+button {
+  cursor: pointer;
+}
+
+button,
+input[type="button"] {
+  width: auto;
+  overflow: hidden;
+}
+
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* dark shades of primary color*/
+/* The primary/main color */
+/* lighter shades of primary color */
+/* dark shades of secondary color*/
+/* secondary color */
+/* lighter shades of secondary color */
+/* darkest grey - used for headings */
+/* grey used for paragraphs */
+/* lightest grey - used for outlines */
+/* Other Colors used */
+body {
+  background-color: white;
+}
+
+/* dark shades of primary color*/
+/* The primary/main color */
+/* lighter shades of primary color */
+/* dark shades of secondary color*/
+/* secondary color */
+/* lighter shades of secondary color */
+/* darkest grey - used for headings */
+/* grey used for paragraphs */
+/* lightest grey - used for outlines */
+/* Other Colors used */
+.Banner {
+  width: 100%;
+  height: 30rem;
+}
+
+/* Other Colors used */
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: #f5f6fa;
+  z-index: 1;
+  top: 0;
+}
+
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.25rem;
+  max-height: 3.5rem;
+}
+
+.navbar ul div {
+  max-height: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar ul div .nav-logo {
+  padding: 0.25rem 1rem;
+}
+
+.navbar ul div .nav-logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.navbar ul div .menu-button {
+  display: none;
+  visibility: hidden;
+}
+
+.navbar ul div .nav-item a {
+  display: block;
+  color: #2d3436;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+}
+
+.navbar ul div .nav-item a.link:hover {
+  background-color: #d8d8d8;
+  -webkit-transition: background-color 100ms linear;
+  transition: background-color 100ms linear;
+}
+
+.navbar ul div .nav-item a.active {
+  background-color: #f7941d !important;
+}
+
+.navbar ul div .nav-item a.active:hover {
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+}
+
+.navbar ul div .title {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.navbar ul div .title a {
+  padding: 1rem 0;
+  font-size: 1.25rem;
+  font-size: clamp(0.5rem, 4vw, 1.25rem);
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #f5f6fa;
+    height: 7rem;
+  }
+  .navbar ul .menu-button {
+    display: -ms-grid !important;
+    display: grid !important;
+    visibility: visible !important;
+    place-items: center;
+    margin-left: auto;
+    padding: 0 1rem;
+    cursor: pointer;
+  }
+  .navbar ul .menu-button i {
+    font-size: 2.5rem;
+  }
+  .navbar ul .menu-button .fa-bars {
+    -webkit-transition: 150ms;
+    transition: 150ms;
+  }
+  .navbar ul .menu-button .open {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  .navbar ul .links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar ul .links .nav-item {
+    background-color: #f5f6fa;
+  }
+  .navbar ul .links .link {
+    background-color: #f5f6faaa;
+  }
+  .navbar ul .links {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -webkit-transition: -webkit-transform 200ms ease-in-out;
+    transition: -webkit-transform 200ms ease-in-out;
+    transition: transform 200ms ease-in-out;
+    transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  }
+  .navbar ul .links .link {
+    -webkit-transition: opacity 100ms linear;
+    transition: opacity 100ms linear;
+    -webkit-transition-delay: 100ms;
+            transition-delay: 100ms;
+  }
+  .navbar ul .links.closed {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transition-delay: 100ms;
+            transition-delay: 100ms;
+  }
+  .navbar ul .links.closed .link {
+    opacity: 0;
+    -webkit-transition-delay: 0ms;
+            transition-delay: 0ms;
+  }
+}
+/*# sourceMappingURL=index.css.map */
